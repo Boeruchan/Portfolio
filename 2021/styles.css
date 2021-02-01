@@ -1,0 +1,122 @@
+/* background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%); */
+/* background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  flex:  100%;
+}
+
+.header {
+  /* display: block; */
+  /* width: auto; */
+  margin: none;
+  /* height: 160px; */
+  background-color: #6bc9f5;
+}
+
+.header img {
+  width: 350px;
+  margin-top: 1px;
+  /* margin-left: 1000px; */
+}
+
+.main {
+  text-align: center;
+  background-color: #fff9c2;;
+}
+
+.aside-1 {
+  display: flex;
+  width: 250px;
+  align-items: right;
+  flex-direction: column;
+  background: #6bc9f5;
+}
+
+.aside-1 img {
+  width: 250px;
+  margin-left: 150px;
+  margin-top: -125px;
+  z-index: 1;
+}
+
+.aside-1 a {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  font-size: 25px;
+  color: black;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.5s;
+  margin-left: -100px;
+}
+
+.aside-1 a:hover {
+  color: #fff9c2;
+}
+
+.aside-1 a:before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 115px;
+  width: 0px;
+  height: 100px;
+  background: url(img/leaf_left.png);
+  background-size: cover;
+  transform-origin: right;
+  transform: rotate(60deg) translateY(50%) translateX(0%);
+  transition: 0.5s;
+}
+
+/* nav a:nth-child(1):before {
+  background:  url(img/leaf_right.png);
+  background-size: cover;
+} */
+
+.aside-1 a:hover:before {
+  margin-left: 20px;
+  width: 165px;
+  height: 120px;
+}
+
+.aside-1 a span {
+  top: -10px;
+  left: 100px;
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 2;
+}
+
+.aside-2 {
+  display: flex;
+  width: 300px;
+  align-items: right;
+  flex-direction: column;
+  background-color: #6bc9f5;
+}
+
+.footer {
+  background-color: lightgreen;
+}
+
+  
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex:6 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
