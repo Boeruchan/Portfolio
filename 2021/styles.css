@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Charmonman&family=Montez&display=swap");
+
+/* font-family: 'Calligraffitti', cursive;
+font-family: 'Charmonman', cursive;
+font-family: 'Montez', cursive; */
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   background: #6bc9f5;
- 
 }
 
 header {
@@ -31,9 +36,9 @@ header {
 }
 
 /* navbar */
-
 .left-sidebar {
-  flex-grow: 1;
+  flex-basis: 23vh;
+  /* flex-shrink:0; */
   background: url(img/steel.png) no-repeat;
   background-size: 19.5vh;
   background-position-x: 40px;
@@ -82,14 +87,19 @@ header {
   z-index: 1;
 }
 
+/* content */
 main {
+  display: flex;
+  justify-content: center;
   height: 80vh;
   background-color: #fff9c2;
-  flex-grow: 8;
+  flex-basis: 150vh;
+  /* flex-shrink:0; */
 }
 
 .right-sidebar {
-  flex-grow: 1;
+  flex-basis: 15vh;
+  /* flex-shrink:0; */
 }
 
 footer {
@@ -108,7 +118,6 @@ footer {
 }
 
 /* clouds animation */
-
 @keyframes animateCloud {
   0% {
     margin-left: -1000px;
@@ -180,4 +189,47 @@ footer {
 
 /* page transistion */
 
+.transition-fade {
+  text-align: center;
+  transition: 0.4s;
+  opacity: 1;
+}
 
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+/* content content */
+.titel h3 {
+  padding-top: 150px;
+  font-family: "Charmonman", cursive;
+  font-size: 150px;
+  line-height: 160px;
+}
+
+.subtitel {
+  position: absolute;
+  padding-top: 180px;
+  top: 100px;
+  left: 720px;
+  font-family: "Montez", cursive;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.titel {
+  position: relative;
+  top: 135px;
+  left: 80px;
+  font-family: "Charmonman", cursive;
+  font-size: 300px;
+  font-weight: bold;
+}
+
+.skills img {
+  display: inline-block;
+  align-items: center;
+  margin-top: 170px;
+  align-items: center;
+  padding-right: 80px;
+}

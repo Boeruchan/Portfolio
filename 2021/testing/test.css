@@ -1,0 +1,67 @@
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+
+  /* moving letters with <span> */
+  .titel h3 {
+    padding-top: 150px;
+    font-family: 'Charmonman', cursive;
+    font-size: 150px;
+    line-height: 160px;
+  }
+  
+  .titel {
+    font-family: 'Charmonman', cursive;
+    font-size: 250px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .titel span {
+  display: inline-block;
+  animation: mover 6s linear infinite;
+  color:  #fff9c2;
+  }
+  
+  @keyframes mover {
+    0% {
+      text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    }
+    50% {
+      text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      transform: translateY(30px);
+    }
+    100% {
+      text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    }
+  }
+  
+  span:nth-child(1)
+  {
+    animation-delay: 0.5s;
+  }
+  span:nth-child(2)
+  {
+    animation-delay: 1s;
+  }
+  span:nth-child(3)
+  {
+    animation-delay: 1.5s;
+  }
+  span:nth-child(4)
+  {
+    animation-delay: 2s;
+  }
+  span:nth-child(5)
+  {
+    animation-delay: 2.5s;
+  }
+  
