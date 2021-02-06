@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Charmonman&family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montez&family=Quicksand&display=swap");
 
-/* font-family: 'Calligraffitti', cursive;
-font-family: 'Charmonman', cursive;
-font-family: 'Montez', cursive; */
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Montez', cursive;
+font-family: 'Quicksand', sans-serif; */
 
 * {
   padding: 0;
@@ -46,10 +46,10 @@ header {
 
 .left-sidebar a {
   position: relative;
-  color: black;
+  color: rgb(10, 72, 153);
   display: block;
   text-decoration: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Amatic SC", cursive;
   line-height: 130px;
   transition: 0.5s;
   top: 200px;
@@ -83,7 +83,7 @@ header {
   left: 130px;
   position: relative;
   top: 50px;
-  font-size: 20px;
+  font-size: 35px;
   z-index: 1;
 }
 
@@ -200,36 +200,32 @@ html.is-animating .transition-fade {
 }
 
 /* content content */
-.titel h3 {
-  padding-top: 150px;
-  font-family: "Charmonman", cursive;
-  font-size: 150px;
-  line-height: 160px;
-}
 
 .subtitel {
   position: absolute;
   padding-top: 180px;
-  top: 100px;
-  left: 720px;
-  font-family: "Montez", cursive;
-  font-size: 150px;
+  top: 130px;
+  left: 850px;
+  font-family: "Amatic SC", cursive;
+  font-size: 100px;
   font-weight: bold;
+  color: #e95500a6;
 }
 
 .titel {
   position: relative;
-  top: 135px;
-  left: 80px;
-  font-family: "Charmonman", cursive;
+  top: 170px;
+  left: 50px;
+  font-family: "Montez", cursive;
   font-size: 300px;
-  font-weight: bold;
+  color: #e95500;
+  /* font-weight: bold; */
 }
 
 .skills img {
   display: inline-block;
   align-items: center;
-  margin-top: 170px;
+  margin-top: 400px;
   align-items: center;
   padding-right: 80px;
 }
