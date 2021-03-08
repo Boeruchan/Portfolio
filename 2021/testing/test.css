@@ -12,6 +12,8 @@ min-height: 100vh;
 background: chocolate;
 }
 
+.canvas
+
 .face {
   position: relative;
   width: 300px;

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montez&family=Quicksand&display=swap");
 
-/* font-family: 'Amatic SC', cursive;
-font-family: 'Montez', cursive;
-font-family: 'Quicksand', sans-serif; */
+ /* font-family: 'Amatic SC', cursive;
+font-family: 'Montez', cursive; */
+/* font-family: 'Quicksand', sans-serif; */
 
 * {
   padding: 0;
@@ -15,6 +15,33 @@ body {
   background: #6bc9f5;
 }
 
+.ching {
+  font-family: "Montez", cursive;
+  font-size: 150px;
+  color: #e95500;
+}
+
+.about {
+  font-family: "Amatic SC", cursive;
+  color: #e95500a6;
+  font-size: 120px;
+}
+
+p {
+  padding-top: 180px;
+  text-align: center;
+  margin:auto;
+  margin-top: -130px;
+  width: 95vh;
+  font-family: "Quicksand";
+  font-size: 30px;
+  /* font-weight: bold; */
+}
+
+a{
+  text-decoration: none;
+}
+
 header {
   height: 15vh;
 }
@@ -22,6 +49,8 @@ header {
 .container-middle {
   display: flex;
 }
+
+/* left and side drawing */
 .boom {
   position: absolute;
   top: 0;
@@ -33,6 +62,88 @@ header {
   top: 40px;
   left: 180px;
   border-radius: 100px;
+}
+
+/* clock style */
+.clock {
+  position: absolute;
+  top: 95px;
+  left: 237px;
+  width: 185px;
+  height: 185px;
+  /* background-color: rgba(255, 255, 255, .8); */
+  border-radius: 50%;
+  /* border: 2px solid black; */
+  z-index: 10;
+
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+  color: rgb(161, 79, 2);
+}
+
+.clock .number1 { --rotation: 30deg; }
+.clock .number2 { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  /* border: 1px solid white; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: red;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 2px;
+  height: 35%;
+  background-color: rgb(175, 56, 13);
+}
+
+.clock .hand.minute {
+  width: 5px;
+  height: 40%;
+  background-color: rgb(144, 42, 5);
+}
+
+.clock .hand.hour {
+  width: 8px;
+  height: 25%;
+  background-color: rgb(144, 42, 5);
 }
 
 /* navbar */
@@ -89,12 +200,43 @@ header {
 
 /* content */
 main {
-  display: flex;
+  display:flex;
   justify-content: center;
   height: 80vh;
   background-color: #fff9c2;
   flex-basis: 150vh;
   /* flex-shrink:0; */
+}
+
+.contact {
+    margin-left: -100px;
+  margin-top: 100px;
+  width: 50vh;
+  height: 50vh;
+  border: 2px solid orange;
+  border-radius: 10%;
+}
+
+.textcontact, h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: "Amatic SC", cursive;
+  color: #e95500a6;
+  font-size: 100px;
+}
+
+.texttext {
+    font-family: "Quicksand";
+    font-size: 30px;
+  }
+
+.text {
+  margin-top: 5vh;
+}
+
+.iconsmargin {
+  margin-top: 3vh;
+  margin-bottom 5vh;
 }
 
 .right-sidebar {
@@ -200,7 +342,6 @@ html.is-animating .transition-fade {
 }
 
 /* content content */
-
 .subtitel {
   position: absolute;
   padding-top: 180px;
@@ -228,4 +369,87 @@ html.is-animating .transition-fade {
   margin-top: 400px;
   align-items: center;
   padding-right: 80px;
+}
+
+/* slideshow */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }

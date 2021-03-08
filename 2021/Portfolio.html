@@ -1,52 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header class="top-banner">
-    <!-- top banner has moving js clouds and in front my housestyle characters -->
-    <!-- different color bg like evening color -->
-        <img src="banner-drawing" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="background-wrap">
+      <div class="x1">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x2">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x3">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x4">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x5">
+        <div class="cloud"></div>
+      </div>
     </div>
-    </header>
-    <!-- vertical, left side page, leaves are the button -->
-    <nav>
-       <img src="flower" alt="">
-       <!-- button css on hover with img leaf-->
-       <li> <button>Home</button></li>
-       <li> <button>About me</button></li>
-       <li> <button>Portfolio</button></li>
-       <li> <button>Contact</button></li>
-    </nav>
-<!-- content = page transitions (niet de gehele page, alleen content) -->
-    <content>
-<!-- frosted glass effect container-->
-<div class="frosted-container">
-<h1>Portfolio</h1>
-<div>
-    <img src="img/animal.PNG" alt="animals" />
-    <!-- pictures of videos? but on click firefly button it will show. Or else its still hidden.-->
-    <img src="some picture or drawing" alt="">
-    <img src="some picture or drawing" alt="">
-    <img src="some picture or drawing" alt="">
-    <img src="some picture or drawing" alt="">
-</div>
-<div>
-    <!-- These buttons on hover will glow and on click glow even blighter -->
-<button class="firefly">work1</button>
-<button class="firefly">work2</button>
-<button class="firefly">work3</button>
-<button class="firefly">work4</button>
-</div>
-</content>
-<side-content>
-    <div class="tree">
-        <!-- here comes the tree with a hidden js clock in squirrel home -->
-        <!-- picture of me showing half of my face and body -->
+
+    <div class="container">
+      <div class="clock">
+        <div class="hand hour" data-hour-hand></div>
+        <div class="hand minute" data-minute-hand></div>
+        <div class="hand second" data-second-hand></div>
+        <div class="number number1">1</div>
+        <div class="number number2">2</div>
+        <div class="number number3">3</div>
+        <div class="number number4">4</div>
+        <div class="number number5">5</div>
+        <div class="number number6">6</div>
+        <div class="number number7">7</div>
+        <div class="number number8">8</div>
+        <div class="number number9">9</div>
+        <div class="number number10">10</div>
+        <div class="number number11">11</div>
+        <div class="number number12">12</div>
+      </div>
+      <div class="bloem"><img src="/img/zon.png" alt="" width="300px" /></div>
+      <div class="boom"><img src="/img/boom-03.png" alt="" width="780px" /></div>
+      <header></header>
+
+      <div class="container-middle">
+        <div class="left-sidebar">
+          <a href="/home.html"><span>Home</span></a>
+          <a href="/About.html"><span>About</span></a>
+          <a href="/Portfolio.html"><span>Portfolio</span></a>
+          <a href="/Contact.html"><span>Contact</span></a>
+        </div>
+
+        <main id="swup">
+          <div class="transition-fade">
+              <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                  <img src="img_woods_wide.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                  <img src="img_5terre_wide.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                  <img src="img_mountains_wide.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                  <img src="img_lights_wide.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                  <img src="img_nature_wide.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                  <img src="img_snow_wide.jpg" style="width:100%">
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+              <!-- Image text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+            
+              <!-- Thumbnail images -->
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
+            </div>
+              </div>
+         
+          </div>
+        </main>
+
+        <div class="right-sidebar"></div>
+      </div>
+
+      <footer>footer</footer>
     </div>
-    </side-content>
-</body>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/js/slideshow.js"></script>
+    <script src="/ching_portfolio.js"></script>
+  </body>
 </html>

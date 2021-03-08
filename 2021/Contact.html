@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header class="top-banner">
-    <!-- top banner has moving js clouds and in front my housestyle characters -->
-    <!-- different color bg like night color with stars -->
-        <img src="banner-drawing" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="background-wrap">
+      <div class="x1">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x2">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x3">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x4">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x5">
+        <div class="cloud"></div>
+      </div>
     </div>
-    </header>
-    <!-- vertical, left side page, leaves are the button -->
-    <nav>
-       <img src="flower" alt="">
-       <!-- button css on hover with img leaf-->
-      
-    </nav>
-<!-- content = page transitions (niet de gehele page, alleen content) -->
-    <content>
-<!-- frosted glass effect container-->
-<div class="frosted-container">
-<h1>Contact</h1>
-<div>
-    <!-- pictures of videos? but on click firefly button it will show. Or else its still hidden.-->
-    <ul>
-        <li>name</li>
-        <li>Ching - Man Fung</li>
-        <li></li>
-    </ul>
-
-    <a img src="email" alt="">
-    <a img src="linkedin" alt="">
-    <a img src="github" alt="">
-    <a img src="techgrounds" alt="">
-</div>
-
-</content>
-<side-content>
-    <div class="tree">
-        <!-- here comes the tree with a hidden js clock in squirrel home -->
-        <!-- full face and body picture-->
-    </div>
-    </side-content>
-
 
     <div class="container">
-        <header>HEADER</header>
-        <main>MAIN CONTENT</main>
-        <aside class="left-sidebar"></aside>
-        <aside class="right-sidebar">RIGHT SIDEBAR</aside>
-        <footer>FOOTER</footer>  
-</div>
-</body>
+      <div class="clock">
+        <div class="hand hour" data-hour-hand></div>
+        <div class="hand minute" data-minute-hand></div>
+        <div class="hand second" data-second-hand></div>
+        <div class="number number1">1</div>
+        <div class="number number2">2</div>
+        <div class="number number3">3</div>
+        <div class="number number4">4</div>
+        <div class="number number5">5</div>
+        <div class="number number6">6</div>
+        <div class="number number7">7</div>
+        <div class="number number8">8</div>
+        <div class="number number9">9</div>
+        <div class="number number10">10</div>
+        <div class="number number11">11</div>
+        <div class="number number12">12</div>
+      </div>
+      <div class="bloem"><img src="/img/zon.png" alt="" width="300px" /></div>
+      <div class="boom"><img src="/img/boom-03.png" alt="" width="780px" /></div>
+      <header></header>
+
+      <div class="container-middle">
+        <div class="left-sidebar">
+          <a href="/home.html"><span>Home</span></a>
+          <a href="/About.html"><span>About</span></a>
+          <a href="/Portfolio.html"><span>Portfolio</span></a>
+          <a href="/Contact.html"><span>Contact</span></a>
+        </div>
+
+        <main id="swup">
+          <div class="transition-fade">
+              <div class="contact">
+                  <h1 class="textcontact">Curious?</h1>
+                  <span class="texttext iconsmargin">Neem dan contact<br>
+                    <div class="iconsmargin"><a href="mailto:chingman.fung@gmail.com"><img src="/img/email.PNG" width="100px"/></a><br>
+                    </div>
+                    <div class="iconsmargin">en bezoek mijn volgende pagina's.</span>
+                  <div class="iconsmargin">
+                  <a href="https://www.linkedin.com/in/chingmanfung/"><img src="/img/linked-in.PNG" width="100px"/></a>
+                  <a href="https://github.com/Boeruchan"><img src="/img/github.png" width="80px" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <div class="right-sidebar"></div>
+      </div>
+
+      <footer>footer</footer>
+    </div>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/ching_portfolio.js"></script>
+  </body>
 </html>
