@@ -289,7 +289,7 @@ main::-webkit-scrollbar-track-piece:start {
 .fotoching img {
   position: absolute;
   margin-left: -5vh;
-  margin-top: -63vh;
+  margin-top: -57vh;
 }
 
 /* home page */
@@ -311,13 +311,13 @@ main::-webkit-scrollbar-track-piece:start {
 
 .animalsright {
   position: absolute;
-  top: 75.2vh;
+  top: 76vh;
   left: 20vh;
 }
 
 .animalsleft {
   position: absolute;
-  top:73.5vh;
+  top:74.5vh;
   left: 113vh;
 }
 
@@ -490,143 +490,117 @@ html.is-animating .transition-fade {
   .ching {
     font-size: 120px;
   }
-
   .about {
     font-size: 90px;
   }
-
   p {
     padding-top: 20vh;
     margin-top: -15vh;
     margin-left: -35vh;
     font-size: 22px;
   }
-
   .bloem {
     top: 20px;
     left: 100px;
     width: 280px;
   }
-
   .clock {
     top: 70px;
     left: 150px;
     width: 175px;
     height: 175px;
   }
-
   .left-sidebar a {
     line-height: 100px;
     top: 120px;
   }
-
   .left-sidebar a:before {
     top: 140px;
   }
-
   .left-sidebar a:hover:before {
     left: 100px;
     width: 150px;
     height: 110px;
   }
-
   .left-sidebar a span {
     left: 100px;
     font-size: 30px;
   }
-
   .images img {
     width: 90%;
   }
-
   .skills {
     margin-top: 18vh;
     min-width: 90vh;
   }
-
   .skills img {
     width: 10vh;
   }
-
   .fotoching img {
     width: 33%;
     margin-left: -5vh;
-    margin-top: -63vh;
+    margin-top: -54vh;
   }
-
   .animalsleft {
-    top:73.5vh;
+    top:74.8vh;
     left: 100vh;
   }
-
   .animalsright {
-    top: 75.2vh;
+    top: 76.4vh;
     left: 10vh;
   }
-  
   .animalsright img{
     width: 25%
-  }
-  
+  } 
   .animalsleft img{ 
     width: 25%;
   }
-
   .textcontact,
   h1 {
     margin-top: 10px;
     font-size: 80px;
   }
-
   .texttext {
     font-size: 20px;
   }
-
   .text {
     margin-top: 3vh;
   }
-
   .iconsmargin {
     margin-bottom: 3vh;
   }
-
   .cloud {
     height: 80px;
     width: 260px;
   }
-
   .cloud::after {
     height: 70px;
     left: 40px;
     top: -40px;
     width: 70px;
   }
-
   .cloud::before {
     height: 140px;
     width: 140px;
     right: 40px;
     top: -70px;
   }
-
   .subtitel {
     font-size: 80px;
   }
-
   .titel {
     font-size: 200px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* Media Queries: tabled landscape */
+@media screen and (max-width: 1600px) {
   .ching {
     font-size: 80px;
   }
-
   .about {
     font-size: 70px;
   }
-
   p {
     padding-top: 20vh;
     margin-top: -15vh;
@@ -634,66 +608,51 @@ html.is-animating .transition-fade {
     width: 45vh;
     font-size: 17px;
   }
-
   .boom {
     right: -5vh;
     width: 45vh;
   }
-
   .bloem {
     top: 5vh;
     left: 10vh;
     width: 220px;
   }
-
-  /* clock style */
   .clock {
     top: 75px;
     left: 115px;
     width: 135px;
     height: 135px;
   }
-
   .clock .number {
     font-size: 1rem;
   }
-  /* navbar */
   .left-sidebar {
     background-position-x: 5px;
   }
-
   .left-sidebar a {
     line-height: 100px;
     top: 120px;
   }
-
   .left-sidebar a:before {
     top: 12vh;
     left: 5vh;
   }
-
   .left-sidebar a:hover:before {
     left: 8vh;
     width: 17vh;
     height: 12vh;
   }
-
   .left-sidebar a span {
     left: 9vh;
-
     font-size: 20px;
     z-index: 1;
   }
-
   .images img {
     width: 90%;
   }
-
-  /* home page */
   .skills {
     width: 60vh;
   }
-
   .skills img {
     width: 20%;
     margin-left: none;
@@ -703,69 +662,56 @@ html.is-animating .transition-fade {
     width: 45%;
     margin-top: -380px;
   }
-
   .animalsleft {
     top:79.5vh;
     left: 60vh;
   }
-
   .animalsright {
     top: 80.5vh;
     left: -12vh;
   }
-  
   .animalsright img{
     width: 15%
   }
-  
   .animalsleft img{ 
     width: 20%;
   }
-
   .textcontact,
   h1 {
     margin-top: 10px;
     font-size: 50px;
   }
-
   .texttext {
     font-size: 20px;
   }
-
   .text {
     margin-top: 1vh;
   }
-
   .iconsmargin {
     margin-top: 1vh;
     margin-bottom: 3vh;
   }
-
   .cloud {
     height: 75px;
     width: 260px;
   }
-
   .cloud::after {
     height: 65px;
     left: 40px;
     top: -40px;
     width: 70px;
   }
-
   .cloud::before {
     height: 135px;
     width: 140px;
     right: 40px;
     top: -70px;
   }
-  /* content content */
   .subtitel {
     padding-top: 5vh;
     margin-left: -30vh;
     font-size: 60px;
   }
-
   .titel {
     margin-left: 15vh;
     font-family: "Montez", cursive;
@@ -774,7 +720,8 @@ html.is-animating .transition-fade {
   }
 }
 
-@media screen and (max-width: 768px) {
+/*mobile version*/
+@media screen and (max-width: 900px) {
   .mobile {
     display: block;
   }
@@ -784,7 +731,6 @@ html.is-animating .transition-fade {
   .mobileicon {
     display: block;
   }
-
   .titel,
   .subtitel,
   .boom,
