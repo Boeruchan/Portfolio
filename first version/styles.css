@@ -279,6 +279,13 @@ main::-webkit-scrollbar-track-piece:start {
   margin-top: 200px;
 }
 
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* portfolio page */
 .images img {
   display: flex;
@@ -353,7 +360,7 @@ h1 {
 }
 
 .text {
-  margin-top: 5vh;
+  margin-top: 20px;
 }
 
 .iconsmargin {
@@ -594,7 +601,7 @@ html.is-animating .transition-fade {
 }
 
 /* Media Queries: tabled landscape */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1300px) {
   .ching {
     font-size: 80px;
   }
@@ -721,7 +728,7 @@ html.is-animating .transition-fade {
 }
 
 /*mobile version*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
   .mobile {
     display: block;
   }
