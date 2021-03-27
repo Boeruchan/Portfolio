@@ -49,30 +49,10 @@ body {
   }
 
   main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
      background-color: #fff9c2;
       width: 70%;
       min-width: 0;
       min-height: 0; 
-  }
-  /*content main portofolio*/
-  main::-webkit-scrollbar {
-    width: 20px;
-  }
-  main::-webkit-scrollbar-track {
-    background: #f0da9f;
-  }
-  main::-webkit-scrollbar-thumb {
-    background-color: orange;
-    border-radius: 20px;
-    border: 3px solid orange;
-    min-height: 45px;
-  }
-  main::-webkit-scrollbar-track-piece:start {
-    background: transparent;
-    margin-top: 200px;
   }
 
   .right-sidebar {
@@ -272,8 +252,8 @@ body {
     height: auto;
 }
 
-/*content main contact*/
-.contact-titel {
+/*content main about*/
+.about-titel {
   display: block;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -283,7 +263,7 @@ body {
   font-size: 7em;
   color: #e95500;
 }
-.contact-content {
+.about-content {
   display: flex;
   justify-content: start;
 }
@@ -333,6 +313,40 @@ h1 {
 .gifbird {
   width: 15%;
 }
+
+/*main content contact*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 35%;
+  height: auto;
+  border: 2px solid orange;
+  border-radius: 25px;
+}
+.contact p {
+  text-align: center;
+  margin: 0;
+}
+.row{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ margin:25px;
+ margin-bottom: 60px;
+}
+.row img{
+  width: 60%;
+  margin-right: -50px;
+}
+.rabbit{
+  margin-bottom:1000px;
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 /*bg clouds*/
 #background-wrap {
@@ -416,6 +430,9 @@ h1 {
 
 /* page transistion */
 .transition-fade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: 0.4s;
   opacity: 1;
 }
