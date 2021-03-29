@@ -458,9 +458,9 @@ html.is-animating .transition-fade {
 
 
 @media all and (max-width: 1600px){
-  body{
+  /* body{
     background-color: greenyellow;
-  }
+  } */
   .subtitel {
     font-size: 6em;
   }
