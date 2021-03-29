@@ -9,6 +9,7 @@
 body {
     height: 100vh;
     background: #6bc9f5;
+    overflow-y: none;
   }
 
   .boom {
@@ -52,7 +53,28 @@ body {
      background-color: #fff9c2;
       width: 70%;
       min-width: 0;
-      min-height: 100%; 
+      min-height: 100%;
+
+  }
+
+  main::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  main::-webkit-scrollbar-track {
+    background: #f0da9f;
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 20px;
+    border: 3px solid orange;
+    min-height: 45px;
+  }
+  
+  main::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 200px;
   }
 
   .right-sidebar {
@@ -268,7 +290,7 @@ body {
   justify-content: start;
 }
 .text{
-  width: 60%;
+  width: 55%;
  padding-left: 100px;
 }
 p{
