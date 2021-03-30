@@ -60,16 +60,18 @@ body {
   .navbar {
   display: none;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   margin: auto;
   width: 50%;
+  z-index: 4;
   }
   .navbar a{
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    color: white;
-    font-family: "Quicksand";
+    color: rgb(109, 68, 21);
+    font-size: 2.5rem;
+    font-family: "Montez", cursive;
   }
   .layout {
     display: flex;
@@ -509,7 +511,7 @@ html.is-animating .transition-fade {
 
 @media all and (max-width: 1950px){
   .skills{
-    margin-top:10%;
+    margin-top:13%;
   }
   .bladeren a:before {
     top: 110px;
@@ -554,7 +556,7 @@ p{
 
 @media all and (max-width: 1700px){
   .steel {
-    background-position-x: 3.2rem;
+    background-position-x: 3.8rem;
   }
   .subtitel {
     font-size: 6em;
@@ -593,8 +595,8 @@ p{
   }
   p{
     font-size: 1.4rem;
-  }h3 {
-    font-size: 1.4rem;
+  }.textblock h3 {
+    font-size: 3rem;
   }
   .fotoching{
     width: 100%;
@@ -602,14 +604,64 @@ p{
     margin-top: 20px;
   }
   .contact {
-    width: 50%;
+    width: 40%;
   }
-  .skills{
-    margin-top:15%;
+  .skills {
+    margin-top: 30%;
+  }
+  .images img{
+    margin-top: 2%
+  }
+}
+
+  @media all and (max-width: 1300px){
+    .skills {
+      margin-top: 30%;
+      width: 60%;
+    }
+    .skills img{
+      max-width: 20%;
+      margin: 10px;
+  } 
+  .images img {
+    margin-top: 5%;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .textblock h3 {
+    font-size: 2rem;
+  }
+  .contact {
+    width: 40%;
   }
 }
 
 @media all and (max-width: 900px){
+  .images img {
+    margin-top: 3%;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  .textblock h3 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .contact {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 850px){
+  .container-clock, .bladeren{
+    display:none;
+    }
+    .steel{
+      background-image: none;
+     }
     .subtitel {
         font-size: 3em;
       }
@@ -622,18 +674,12 @@ p{
         font-size: 6em; 
       }
       .skills {
-        margin-top: 50%;
+        margin-top: 60%;
         width: 70%;
       }
       .skills img{
         max-width: 20%;
         margin: 10px;
-    }
-    .container-clock, .left-sidebar, .right-sidebar{
-    display:none;
-    }
-    .boom{
-     background-image: none;
     }
     .text{
       margin-top: 30px;
@@ -653,17 +699,20 @@ p{
       margin-top: 25%;
     }
     .contact {
-      width: 90%;
+      width: 60%;
+    }
+    .left-sidebar {
+      width: 7%;
     }
     main {
-       width: 100%;
-   }
+      width: 85%;
+    }
    .navbar{
      display: flex;
    }
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 500px){
 .mobile, .mobileicon, .mobilebird{
   display: block;
 }
